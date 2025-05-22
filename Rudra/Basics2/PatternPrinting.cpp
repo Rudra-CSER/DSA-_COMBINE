@@ -1,9 +1,9 @@
  #include<bits/stdc++.h>
  using namespace std;
  
-void printPatten(){
-     for (int i = 0 ; i<4 ; i++){
-        for(int j= 0; j<4; j++){
+void printPatten(int n){
+     for (int i = 0 ; i<n ; i++){
+        for(int j= 0; j<n; j++){
           cout<< "*";
         }
     cout<<endl;
@@ -12,7 +12,9 @@ void printPatten(){
 
 
  int main() {
-     printPatten();
+    int n;
+    cin>>n;
+     printPatten(n);
 
      return 0;
  } 
