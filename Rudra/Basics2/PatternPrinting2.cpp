@@ -3,7 +3,7 @@
  
 void printPatten(int n){
      for (int i = 0 ; i<n ; i++){
-        for(int j= 0; j<i; j++){
+        for(int j= 0; j<=i; j++){
           cout<< "*";
         }
     cout<<endl;
@@ -13,7 +13,7 @@ void printPatten(int n){
 
  int main() {
     int n;
-    cout<<n;
+    cin >> n;
     printPatten(n);
 
      return 0;
