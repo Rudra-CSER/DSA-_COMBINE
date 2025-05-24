@@ -59,6 +59,7 @@ int main() {
   for(int i=1 ; i<= t ; i++)  {
 
     int n ;
+    cout<<"Enter The input";
     cin >> n;
     print6(n);
  }
