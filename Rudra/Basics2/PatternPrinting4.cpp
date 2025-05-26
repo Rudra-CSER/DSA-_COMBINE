@@ -71,6 +71,18 @@ void print7(int n){
   cout << endl;
   }
 }
+void print8(int n){
+  for (int i=0; i < n; i++){
+    // space
+   
+    // star
+    
+    // space
+  
+
+  cout << endl;
+  }
+}
 
 int main()
 {
@@ -82,7 +94,7 @@ int main()
     int n;
     cout << "Enter The input";
     cin >> n;
-    print7(n);
+    print8(n);
   }
   return 0;
 }
