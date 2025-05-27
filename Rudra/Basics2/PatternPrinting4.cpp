@@ -89,6 +89,28 @@ void print8(int n){
   cout << endl;
   }
 }
+void print9(int n){
+  for (int i=0; i < n; i++){
+    // space
+ for(int j = 0 ; j < i ; j++){
+     cout<< " ";
+ }
+    // star
+    for(int j = 0 ; j < n*2-(2*i+1) ; j++){
+     cout<< "*";
+ }
+    // space
+  for(int j=0 ; j< i ; j++){
+   cout << " "; 
+  }
+
+  cout << endl;
+  }
+}
+
+ //printing the step with no of 
+ //test case + no of itteration
+
 
 int main()
 {
@@ -100,6 +122,7 @@ int main()
     int n;
     cout << "Enter The input";
     cin >> n;
+    print7(n);
     print8(n);
   }
   return 0;
