@@ -1,8 +1,10 @@
 this Folder is totally created for buliding locical thinking 
 
+//make sure to upload on git
+
  // for Commiting use this comment 
   git commit -m"(Pattern Printing) No 1 , 2 parrtens are printed  "
-
+  git push // no to too add remort loction run it on git codespace server 
 
 
  /*   !!!!!!!! Reminder !!!!!!! 
