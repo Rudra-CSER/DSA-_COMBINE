@@ -64,7 +64,8 @@ for(int j =1 ; j<= space; j++){
    space -=2;
   }
 }
-
+void print13(){ 
+}
 
  //printing the step with no of 
  //test case + no of itteration
