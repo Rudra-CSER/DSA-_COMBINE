@@ -68,6 +68,7 @@ void print13(){
 }
 
 void print14(){
+  int streak = 0 ;
   
 }
  //printing the step with no of 
