@@ -24,8 +24,10 @@ int countDigits(int n){
 
 int main() {
     int N = 329823;
+    int m=0;
     cout << "N: "<< N << endl;
     int digits = countDigits(N);
     cout << "Number of Digits in N: "<< digits << endl;
     return 0;
 }
+//helloo gadhee
