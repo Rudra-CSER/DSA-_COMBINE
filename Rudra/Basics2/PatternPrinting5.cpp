@@ -67,10 +67,7 @@ for(int j =1 ; j<= space; j++){
 void print13(){ 
 }
 
-void print14(){
-  int streak = 0 ;
 
-}
 void print14(){
   int streak = 0 ;
 
