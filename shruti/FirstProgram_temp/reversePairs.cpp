@@ -6,7 +6,7 @@ class Solution {
 public:
     // Merge sort helper function to count reverse pairs
     int mergeSort(vector<int>& nums, int left, int right) {
-        if (left >= right) return 0;
+        if (left >= right) return 0; 
         int mid = left + (right - left) / 2;
         int count = 0;
         count += mergeSort(nums, left, mid);
