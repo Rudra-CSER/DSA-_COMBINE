@@ -134,6 +134,7 @@ void print16(int n)
 }
 
 void print17(int n)
+
 {
   for (int i = 0; i < n; i++)
   {
@@ -164,6 +165,40 @@ void print17(int n)
     cout << endl;
   }
 }
+void print18(int n)
+{
+  int spaces = 0;
+    for(int i= 0; i<n ;i++){
+        for(int j=1 ; j<=n-i ;j++){
+            cout<<"*";
+        }
+        for(int j=0 ; j<spaces ;j++){
+            cout<<" ";
+        }
+        for(int j=1 ; j<=n-i ;j++){
+            cout<<"*";
+            }
+     spaces+=2;
+     cout<< endl;
+    }
+  
+  spaces = 2*n -2;
+    for(int i= 1; i<=n ;i++){
+        for(int j=1 ; j<=i ;j++){
+            cout<<"*";
+        }
+        for(int j=0 ; j<spaces ;j++){
+            cout<<" ";
+        }
+        for(int j=1 ; j<=i ;j++){
+            cout<<"*";
+            }
+     spaces-=2;
+     cout<< endl;
+    }
+  
+ 
+}
 int main()
 {
   // make sure to upload on git
@@ -175,14 +210,14 @@ int main()
     int n;
     cout << "Enter The input";
     cin >> n;
-    print16(n);
+    // print16(n);
     // cout<<"" << endl;
     // print15(n);
     // cout<<"" << endl;
     // print14(n);
     // print13(n);
     // print12(n);
-    print17(n);
+    print18(n);
   }
   return 0;
 }
