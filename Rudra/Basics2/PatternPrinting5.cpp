@@ -165,7 +165,7 @@ void print17(int n)
     cout << endl;
   }
 }
-void print18(int n)
+void print19(int n)
 {
   int spaces = 0;
     for(int i= 0; i<n ;i++){
@@ -217,7 +217,7 @@ int main()
     // print14(n);
     // print13(n);
     // print12(n);
-    print18(n);
+    print19(n);
   }
   return 0;
 }
