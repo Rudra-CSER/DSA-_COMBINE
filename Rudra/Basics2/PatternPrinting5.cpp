@@ -144,7 +144,7 @@ void print17(int n)
       cout << " ";
     }
 
-     char ch = 'A' ;
+    char ch = 'A';
     // adding a char BRake point that it will no be incremented further
     char BrakePoint = (2 * i + 1) / 2;
 
@@ -168,36 +168,86 @@ void print17(int n)
 void print19(int n)
 {
   int spaces = 0;
-    for(int i= 0; i<n ;i++){
-        for(int j=1 ; j<=n-i ;j++){
-            cout<<"*";
-        }
-        for(int j=0 ; j<spaces ;j++){
-            cout<<" ";
-        }
-        for(int j=1 ; j<=n-i ;j++){
-            cout<<"*";
-            }
-     spaces+=2;
-     cout<< endl;
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = 1; j <= n - i; j++)
+    {
+      cout << "*";
     }
-  
-  spaces = 2*n -2;
-    for(int i= 1; i<=n ;i++){
-        for(int j=1 ; j<=i ;j++){
-            cout<<"*";
-        }
-        for(int j=0 ; j<spaces ;j++){
-            cout<<" ";
-        }
-        for(int j=1 ; j<=i ;j++){
-            cout<<"*";
-            }
-     spaces-=2;
-     cout<< endl;
+    for (int j = 0; j < spaces; j++)
+    {
+      cout << " ";
     }
-  
- 
+    for (int j = 1; j <= n - i; j++)
+    {
+      cout << "*";
+    }
+    spaces += 2;
+    cout << endl;
+  }
+
+  spaces = 2 * n - 2;
+  for (int i = 1; i <= n; i++)
+  {
+    for (int j = 1; j <= i; j++)
+    {
+      cout << "*";
+    }
+    for (int j = 0; j < spaces; j++)
+    {
+      cout << " ";
+    }
+    for (int j = 1; j <= i; j++)
+    {
+      cout << "*";
+    }
+    spaces -= 2;
+    cout << endl;
+  }
+}
+void print20(int n)
+{
+  int spaces = 2 * n - 2;
+
+  for (int i = 1; i <=2 * n - 1; i++)
+  {
+    int starts = i;
+    if (i > n){starts = 2 * n - i;}
+    // stars
+    for (int j = 1; j <= starts; j++){
+      cout << "*";
+    }
+    // spces
+    for (int j = 1; j <=spaces; j++){
+      cout << " ";
+    }
+    // stars
+    for (int j = 1; j <= starts; j++){
+      cout << "*";
+    }
+cout << endl;
+    if (i < n)
+      spaces -= 2;
+    else
+      spaces += 2;
+    
+  }
+}
+void print21(int n){
+}
+void print23(int n){
+    for(int i=0; i<2*n-1 ; i++){
+        for(int j=0; j<2*n-1 ; j++){
+                int top = i;
+                int left = j;
+                int right = ((2*n-1)-1)-j;
+                int bottom = ((2*n-1)-1)-i;
+
+               cout<<(n- min (min(top,bottom),min(left,right)));
+
+        }
+        cout<<endl;
+    }
 }
 int main()
 {
@@ -217,7 +267,7 @@ int main()
     // print14(n);
     // print13(n);
     // print12(n);
-    print19(n);
+    print23(n);
   }
   return 0;
 }
