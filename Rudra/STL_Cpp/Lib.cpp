@@ -12,7 +12,7 @@ using namespace std;
  */
 
 // ============================================
-// PAIRS - Used to store two values together
+// PAIRS - Used to s f tore two values together
 // ============================================
 void demonstratePairs() {
     cout << "\n=== PAIRS DEMONSTRATION ===" << endl;
